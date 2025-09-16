@@ -352,7 +352,7 @@
         
     </div>
 
-    <div id="footer-container"></div>
+ <div id="footer-container" ></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -368,21 +368,49 @@
         $(document).ready(function () {
 
             fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                    initNavbarScripts(); // Si necesitas inicializar scripts del navbar
-                });
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+                initNavbarScripts(); // Si necesitas inicializar scripts del navbar
+            });
 
 
             fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-container').innerHTML = data;
-                });
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
             // Animación para los acordeones
             $('.boton-disp').click(function () {
+                // Toggle para el icono
                 $(this).find('i').toggleClass('rotate-180');
+
+                // Obtener el div objetivo del collapse
+                var target = $(this).data('target');
+
+                // Esperar a que termine la animación de collapse (300ms por defecto en Bootstrap)
+                setTimeout(function () {
+                    // Verificar si el panel está ahora visible
+                    if ($(target).hasClass('show')) {
+                        // Si está visible, hacer scroll suave hasta él
+                        $('html, body').animate({
+                            scrollTop: $(target).offset().top - 20
+                        }, 300);
+                    }
+                }, 300);
+            });
+
+            // Smooth scrolling para todos los enlaces
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
             });
         });
     </script>
