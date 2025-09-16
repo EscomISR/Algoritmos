@@ -366,6 +366,7 @@
 
     <script>
         $(document).ready(function () {
+            // Animación para los acordeones
 
             fetch('navbar.html')
             .then(response => response.text())
@@ -380,7 +381,8 @@
             .then(data => {
                 document.getElementById('footer-container').innerHTML = data;
             });
-            // Animación para los acordeones
+
+            
             $('.boton-disp').click(function () {
                 // Toggle para el icono
                 $(this).find('i').toggleClass('rotate-180');
