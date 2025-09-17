@@ -72,7 +72,13 @@
             align-items: center;
         }
 
-        
+        .imagen-centrada {
+    display: block;
+    margin: 0 auto; /* Centrado horizontal */
+    max-width: 600px;
+    max-height: 600px;
+    height: auto; /* Mantiene la proporción de la imagen */
+        }
 
         .navbar-brand {
             color: white !important;
@@ -358,9 +364,9 @@
                  o inviables, del lado derecho, la vuelta atrás muestra el avanza en profundidad y, al detectar un camino
                  que no conduce a una solución válida, coloca la rama (marcada con una “X”), evitando exploraciones(Cormen, Leiserson, Rivest, & Stein, 2022).</span>
             </figure>
-            <div class="centrar-imagen">
-                <img src="images/figura12.png" alt="Figura_12" style="max-width: 500px; max-height: 500px;">
-            </div>
+           
+                <img src="images/figura12.png" alt="Figura_12" class="imagen-centrada" style="max-width: 500px; max-height: 500px;">
+            
              <h4>1.4.1 Exploración exhaustiva </h4>
                <p>La exploración exhaustiva presenta como ventajas su simplicidad conceptual y facilidad de implementación,
                  ya que se basa en generar todas las posibles soluciones y verificar cuáles cumplen las condiciones establecidas.
@@ -430,9 +436,9 @@
                       retrocede cuando detecta un conflicto, podando las ramas inválidas hasta encontrar una configuración válida. Adaptado de
                       Introduction to Algorithms (Cormen, Leiserson, Rivest, & Stein, 2022).</span>
             </figure>
-            <div class="centrar-imagen">
-                <img src="images/figura13.png" alt="Figura_13" style="max-width: 500px; max-height: 500px;">
-            </div>
+         
+                <img src="images/figura13.png" alt="Figura_13" class="imagen-centrada" style="max-width: 500px; max-height: 500px;">
+            
         <div class="section" id="sistemas-estructurados">
            
         <div class="highlight">
@@ -476,9 +482,9 @@
                 <span>Figura 14. compara la exploración exhaustiva, que evalúa todas las soluciones posibles con complejidad exponencial, frente a la vuelta atrás,
                       que descarta ramas innecesarias reduciendo el espacio de búsqueda (Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C., 2022).</span>
             </figure>
-            <div class="centrar-imagen">
-                <img src="images/figura14.png" alt="Figura_14" style="max-width: 500px; max-height: 500px;">
-            </div>
+            
+                <img src="images/figura14.png" alt="Figura_14" class="imagen-centrada" style="max-width: 500px; max-height: 500px;">
+            
         <div class="highlight">
         <h4>Resumen. Nociones de complejidad de la exploración exhaustiva y vuelva atras.</h4>
         <ul>
