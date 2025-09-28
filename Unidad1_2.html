@@ -340,15 +340,15 @@
         <div class="section">
             <p>El problema del ordenamiento consiste en reorganizar un conjunto de elementos, generalmente almacenados 
                en una estructura de datos como un arreglo o lista, siguiendo un criterio específico, ya sea ascendente o
-               descendente. Este proceso es fundamental en informática porque facilita la búsqueda, el análisis y la gestión
-               eficiente de la información (Cormen, Leiserson, Rivest, & Stein, 2022).</p>
+               descendente. Este proceso es fundamental en Informática porque facilita la búsqueda, el análisis y la gestión
+               eficiente de la información (Cormen, Leiserson, Rivest, y Stein, 2022).</p>
 
         <h4>Importancia del ordenamiento</h4>
 
              <p>El ordenamiento no solo organiza los datos, sino que también permite optimizar otros algoritmos, como los
                 de búsqueda binaria, que requieren una lista previamente ordenada. Además, constituye la base para tareas de
                 análisis de datos, visualización y procesamiento de grandes volúmenes de información. En este sentido, su estudio
-                es crucial en el diseño de software y en el aprendizaje de estructuras de datos (García & Joyanes, 2017).</p>  
+                es crucial en el diseño de software y en el aprendizaje de estructuras de datos (García y Joyanes, 2017).</p>  
 
         <h4>Clasificación de algoritmos de ordenamiento</h4>
             
@@ -368,27 +368,27 @@
                
             <p>Los algoritmos de ordenamiento simples son los más básicos y fáciles de implementar, aunque resultan ineficientes en grandes 
                volúmenes de datos. El ordenamiento burbuja consiste en comparar e intercambiar elementos adyacentes hasta que toda la lista esté 
-               ordenada, con una complejidad temporal de O(n²) (Cormen, Leiserson, Rivest, & Stein, 2022). Por su parte, el ordenamiento por 
+               ordenada, con una complejidad temporal de O(n²) (Cormen, Leiserson, Rivest, y Stein, 2022). Por su parte, el ordenamiento por 
                selección selecciona el elemento mínimo en cada pasada y lo coloca en la posición correspondiente, también con una complejidad
                de O(n²) (Knuth, 1998). Finalmente, el ordenamiento por inserción coloca cada elemento en su posición adecuada dentro de la 
-               parte previamente ordenada, siendo más eficiente en listas pequeñas o casi ordenadas, con complejidad O(n²) (Sedgewick & Wayne, 2011).</p> 
+               parte previamente ordenada, siendo más eficiente en listas pequeñas o casi ordenadas, con complejidad O(n²).</p> 
                
             <p>Dentro de los algoritmos eficientes basados en divide y vencerás, el quicksort selecciona un pivote y divide el arreglo en sublistas 
-               menores y mayores, alcanzando una complejidad promedio de O(n log n), aunque en el peor de los casos puede  llegar a O(n²) (Hoare, 1962; Cormen et al., 2022).
+               menores y mayores, alcanzando una complejidad promedio de O(n log n), aunque en el peor de los casos puede  llegar a O(n²).
                Otro ejemplo es el mergesort, que divide el arreglo en mitades, las ordena recursivamente y luego combina los resultados, manteniendo
                siempre una complejidad O(n log n) (Knuth, 1998).  De igual modo, el heapsort construye un montículo (heap) y extrae repetidamente
                el valor máximo o mínimo, logrando también  una complejidad O(n log n) y con la ventaja de no requerir memoria adicional
-               significativa (Cormen et al., 2022).</p>    
+               significativa.</p>    
 
             <p>Por último, los algoritmos de ordenamiento no comparativos aprovechan propiedades adicionales de los datos. El counting sort ordena
-               contando las ocurrencias de cada valor, con una complejidad de O(n + k), donde k representa el rango de valores (Sedgewick & Wayne, 2011). 
+               contando las ocurrencias de cada valor, con una complejidad de O(n + k), donde k representa el rango de valores (Sedgewick y Wayne, 2011). 
                El radix sort procesa los números dígito por dígito usando un método estable como base, alcanzando una complejidad de O(nk), siendo útil
                en datos numéricos con un rango definido (Knuth, 1998). Finalmente, el bucket sort distribuye los elementos en “cubetas” o intervalos, que luego se ordenan 
                individualmente, alcanzando una complejidad O(n + k) en condiciones de datos uniformemente distribuidos.</p>
 
         <p></p>
             <figure>
-               <span>Figura 6. Mapa conceptual de algoritmos de ordenamiento. Adaptado de Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022).</span>
+               <span>Figura 6. Mapa conceptual de algoritmos de ordenamiento. Adaptado de Cormen, T. H., Leiserson, C. E., Rivest, R. L., y Stein, C. (2022). </span>
             </figure>
             
                 <img src="images/figura7.png" alt="Figura_7" class= "imagen-centrada" style="max-width: 600px; max-height: 600px;">
@@ -412,12 +412,12 @@
             
                  <p>En términos de estabilidad, el ordenamiento por inserción conserva el orden relativo de los elementos iguales, 
                     lo que lo hace útil en situaciones donde se requiere mantener esta característica. Por ello, además de su claridad
-                    conceptual, tiene un gran valor pedagógico como introducción a los algoritmos de ordenamiento más complejos (Knuth, 1998).</p>   
+                    conceptual, tiene un gran valor pedagógico como introducción a los algoritmos de ordenamiento más complejos.</p>   
 
                 
         
         <figure>
-            <span>Código 3. Ejemplo de pseudocódigo del algoritmo de ordenamiento por inserción (Sedgewick & Wayne, 2011)</span>
+            <span>Código 3. Ejemplo de pseudocódigo del algoritmo de ordenamiento por inserción</span>
        
         </figure>
         
@@ -429,14 +429,13 @@
             <h4>Resumen de los algoritmos de ordenamiento y el método de inserción.</h4>
             <ul>
                 <li>Los algoritmos de ordenamiento permiten organizar datos para facilitar su búsqueda y uso. Se dividen en simples (burbuja, selección e inserción),
-                    eficientes (quicksort, mergesort y heapsort) y no comparativos (counting sort, radix sort y bucket sort), cada uno con diferentes niveles de 
-                    eficiencia.</li>
+                    eficientes (quicksort, mergesort y heapsort) y no comparativos, cada uno con diferentes niveles de eficiencia.</li>
                 <li>Los algoritmos simples son fáciles de aplicar, pero poco eficientes en grandes volúmenes, pues alcanzan una complejidad de O(n²).
-                    Se usan más en contextos educativos o listas pequeñas (Knuth, 1998).</li>
+                    Se usan más en contextos educativos o listas pequeñas.</li>
                 <li>Los algoritmos eficientes logran complejidades de O(n log n), siendo más adecuados para grandes cantidades de datos. Suelen basarse en
                     la recursividad o estructuras como montículos.</li>
                 <li>Los algoritmos no comparativos aprovechan propiedades de los datos, como su rango o dígitos. Funcionan muy bien en casos específicos,
-                    logrando complejidades de O(n + k) o O(nk) (Knuth, 1998).</li>   
+                    logrando complejidades de O(n + k) o O(nk).</li>   
                 <li>El ordenamiento por inserción, dentro de los simples, destaca por su claridad y estabilidad. Es útil en listas cortas o casi
                     ordenadas, aunque en el peor caso llega a O(n²), lo que lo hace poco eficiente en datos extensos.</li>    
                     
@@ -459,7 +458,7 @@
 
                 <p>Este algoritmo no es estable, ya que los elementos iguales pueden cambiar su orden relativo al intercambiarse posiciones. Sin embargo,
                    tiene la ventaja de realizar un número reducido de intercambios en comparación con otros métodos simples como el burbuja. Su complejidad
-                   temporal en el mejor, promedio y peor caso es de O(n²), lo que lo hace poco eficiente en listas grandes, aunque adecuado para volúmenes
+                   temporal en el mejor promedio y peor caso es de O(n²), lo que lo hace poco eficiente en listas grandes, aunque adecuado para volúmenes
                    pequeños de datos o cuando se buscan implementaciones fáciles de comprender.</p>
 
                 <p>Pedagógicamente, el ordenamiento por selección se utiliza como ejemplo introductorio en cursos de algoritmia, ya que ilustra
@@ -472,7 +471,7 @@
                 <p>El ordenamiento de burbuja es uno de los algoritmos más simples para organizar datos. Su funcionamiento consiste en recorrer repetidamente
                    la lista, comparando elementos adyacentes y realizando intercambios si están en el orden incorrecto. Este proceso se repite hasta que no
                    se requieren más cambios, lo que indica que la lista ya está ordenada. Su nombre proviene del efecto de los elementos más grandes que “suben”
-                   hacia el final de la lista en cada iteración, como si fueran burbujas en un líquido (Cormen, Leiserson, Rivest, & Stein, 2022).</p>
+                   hacia el final de la lista en cada iteración, como si fueran burbujas en un líquido (Cormen, Leiserson, Rivest, y Stein, 2022).</p>
 
                 <p>La complejidad temporal del algoritmo en el peor y promedio caso es O(n²), ya que cada elemento debe compararse repetidamente con el resto.
                    Sin embargo, en el mejor caso, cuando la lista ya está ordenada, puede alcanzar una eficiencia de O(n) si se introduce una bandera que detenga
@@ -481,12 +480,12 @@
 
                 <p>Pese a sus limitaciones, el ordenamiento de burbuja es ampliamente utilizado en la enseñanza inicial de algoritmos, ya que ilustra de manera
                    clara los principios básicos de comparación e intercambio de datos. Su valor pedagógico radica en su sencillez conceptual más que en su eficiencia,
-                   lo que lo convierte en un buen punto de partida para introducir algoritmos más avanzados (Sedgewick & Wayne, 2011).</p>
+                   lo que lo convierte en un buen punto de partida para introducir algoritmos más avanzados (Sedgewick y Wayne, 2011).</p>
 
     
 
             <figure>
-                <span>Figura 7. Ordenamiento por inserción, selección y burbuja. Adaptado de Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022).</span>
+                <span>Figura 7. Ordenamiento por inserción, selección y burbuja. T. H., Leiserson, C. E., Rivest, R. L., y Stein, C. (2022).</span>
                
             </figure>
            
@@ -497,17 +496,17 @@
     <div class="subsection">
                 <h4>1.2.4 Ordenamiento por mezcla</h4>
                   <p>El ordenamiento por mezcla (merge sort) es un algoritmo de ordenamiento eficiente basado en la estrategia de divide y vencerás. Su funcionamiento
-                    consiste en dividir recursivamente la lista en mitades hasta obtener sublistas de un solo elemento, para luego fusionarlas en orden hasta reconstruir
+                    consiste en dividir recursivamente la lista en mitades hasta obtener sublistas de un solo elemento para luego fusionarlas en orden hasta reconstruir
                     la lista completa ordenada. Esta técnica garantiza una estructura sistemática que mantiene la estabilidad del orden relativo entre elementos
-                    iguales (Cormen, Leiserson, Rivest, & Stein, 2022).</p>
+                    iguales (Cormen, Leiserson, Rivest, y Stein, 2022).</p>
 
-                  <p>La complejidad temporal de merge sort es O(n log n) en el mejor, promedio y peor caso, lo que lo convierte en un algoritmo altamente predecible en
+                  <p>La complejidad temporal de merge sort es O(n log n) en el mejor promedio y peor caso, lo que lo convierte en un algoritmo altamente predecible en
                      cuanto a rendimiento. Sin embargo, su principal desventaja es el uso de memoria adicional para almacenar sublistas durante el proceso de fusión,
                      lo que implica un costo espacial de O(n). Aun así, es ampliamente utilizado en contextos donde la estabilidad y la eficiencia son
                      necesarias (Knuth, 1998).</p>
                   <p>Desde el punto de vista pedagógico, merge sort es un ejemplo clásico de cómo aplicar la recursividad en la solución de problemas complejos.
-                     Su estudio facilita la comprensión de la estrategia de dividir y conquistar, fundamental en algoritmia, y lo convierte en una de las bases
-                     para algoritmos más avanzados (Sedgewick & Wayne, 2011).</p>
+                     Su estudio facilita la comprensión de la estrategia de dividir y conquistar, fundamental en algoritmia y lo convierte en una de las bases
+                     para algoritmos más avanzados (Sedgewick y Wayne, 2011).</p>
                     
      </div>
             </div>
@@ -519,7 +518,7 @@
                 <br>
                 <h5>Ventajas:</h5>
                 <ul class="feature-list">
-                    <li>Eficiencia garantizada: mantiene una complejidad de O(n log n) en el mejor, promedio y peor caso, lo que asegura un rendimiento 
+                    <li>Eficiencia garantizada: mantiene una complejidad de O(n log n) en el mejor promedio y peor caso, lo que asegura un rendimiento 
                         estable incluso en grandes volúmenes de datos.</li>
                     <li>Estabilidad: conserva el orden relativo de los elementos iguales, lo que lo hace útil en aplicaciones donde este aspecto es
                         importante, como bases de datos o algoritmos.</li>
@@ -646,7 +645,7 @@
             <p>Los algoritmos de ordenamiento constituyen una herramienta esencial en la informática, ya que permiten organizar datos de manera eficiente para optimizar
                búsquedas, análisis y procesamiento de información. Los métodos simples, como burbuja, inserción y selección, cumplen un papel didáctico importante aunque
                presentan limitaciones en rendimiento; en contraste, algoritmos más avanzados como mergesort, quicksort y heapsort ofrecen un desempeño escalable de O(n log n),
-               mientras que los no comparativos como radix sort o counting sort destacan en contextos específicos. En conjunto, su estudio no solo permite seleccionar la técnica
+               mientras que los no comparativos como radix sort o counting sort destacan en contextos específicos. En conjunto, su estudio no sólo permite seleccionar la técnica
                adecuada según el problema, sino también comprender los fundamentos de la complejidad algorítmica y su impacto en el desarrollo de software 
                eficiente.
             </p>
