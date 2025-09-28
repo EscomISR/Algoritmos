@@ -413,7 +413,7 @@
             <p>La programación por vuelta atrás es una técnica algorítmica que se basa en la exploración en profundidad de un espacio de soluciones,
                construyendo las respuestas de manera incremental y retrocediendo cada vez que se detecta una violación de restricciones. En este 
                enfoque, cada decisión se representa como un paso en el árbol de búsqueda; si en algún punto se determina que una elección parcial no
-               puede conducir a una solución válida, el algoritmo retrocede (backtrack) al paso anterior para probar una alternativa distinta. Este
+               puede conducir a una solución válida, el algoritmo retrocede al paso anterior para probar una alternativa distinta. Este
                mecanismo permite reducir significativamente el espacio de búsqueda en comparación con la exploración exhaustiva, aunque en el peor
                de los casos conserva complejidad exponencial (Kleinberg y Tardos, 2005).
             </p>
@@ -467,7 +467,7 @@
                    búsqueda con 𝑛 elementos, la cantidad de operaciones puede llegar a ser del orden de O(2n). Esto convierte al método en poco eficiente para problemas
                    de gran escala, aunque garantiza siempre encontrar una solución. </p>
 
-                <p>En contraste, la vuelta atrás (backtracking) optimiza la exploración exhaustiva al descartar tempranamente ramas del espacio de búsqueda que no cumplen
+                <p>En contraste, la vuelta atrás optimiza la exploración exhaustiva al descartar tempranamente ramas del espacio de búsqueda que no cumplen
                    con las condiciones del problema. Así, en lugar de recorrer todas las posibilidades, se reducen los cálculos explorando únicamente aquellas rutas
                    potencialmente válidas. Aunque en el peor de los casos su complejidad sigue siendo exponencial, en la práctica disminuye significativamente el número
                    de pasos al evitar soluciones inviables desde el inicio.</p>
