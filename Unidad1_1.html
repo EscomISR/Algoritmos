@@ -431,8 +431,8 @@
         <p>c) Algoritmos de búsqueda, estos van a permitir que encuentren una o varios elementos dentro de un conjunto de propiedades
              que permitan determinar específicamente la estructura de datos con ello podemos tener: </p>
 
-             <p>a.-	Secuenciales, son aquellos que van a comparar el elemento a buscar dentro de un conjunto de datos y </p>
-             <p>b.-	Binarios son aquellos que van a realizar búsquedas dentro de un elemento ubicado en el cual la serie debe
+             <p>1.- Secuenciales, son aquellos que van a comparar el elemento a buscar dentro de un conjunto de datos y </p>
+             <p>2.-  Binarios son aquellos que van a realizar búsquedas dentro de un elemento ubicado en el cual la serie debe
                 de ser ordenada para determinar si son iguales.</p>
 
         <p>d) Algoritmos de ordenamiento, son aquellos que se utilizan para reorganizar un listado teniendo en consideración características
@@ -488,7 +488,7 @@
                 debe de establecerse desde el punto de vista común pero también lógico y que les va a ayudar a describir textualmente paso a paso cada una de
                 las acciones que deberá de realizar para que puedan ustedes resolver un problema específico.</li>
    <figure>
-           <span>Figura 2. Diagrama Algoritmos, estructuras de datos y objetos.</span>
+           <span>Figura 3. Diagrama Algoritmos, estructuras de datos y objetos.</span>
         </figure>
         <div class="centrar-imagen">
             <img src="images/figura3.png" alt="Figura_3" style="max-width: 600px; max-height: 600px;">
@@ -499,7 +499,7 @@
                 estándar y que no se podrán ejecutar dicho proceso.</li><p></p>
 
             <figure>
-            <span>Ejemplo de pseudocódigo para determinar números pares o impares.</span>
+            <span>Código 1. Ejemplo de pseudocódigo para determinar números pares o impares.</span>
         </figure>
 
         <div class="centrar-imagen">
@@ -522,7 +522,7 @@
             <img src="images/figura5.png" alt="Figura_5" style="max-width: 600px; max-height: 600px;">
          </div>
        <p></p>
-            <li>4.-traza de algoritmo. En este proceso nos permite la ejecución manual de un programa, pero hay que tener la consideración de que
+            <li>4. Traza de algoritmo. En este proceso nos permite la ejecución manual de un programa, pero hay que tener la consideración de que
                 debe de ser en forma secuencial de sus características y sentencias que lo compone. La traza de este algoritmo conocido como
                 programa nos va a indicar todos los procesos que van a ser la secuencia de instrucciones para llevarse a su ejecución de la misma
                 manera las variables que se van a requerir en cada acción del propio código, esto es importante para corroborar el funcionamiento
@@ -532,55 +532,37 @@
                
         <br>
         
-<h4>1.1.3 Abstracción y tipo de dato abstracto</h4>
+<h4>1.1.3 Abstracción y tipo de dato abstracto.</h4>
         
-        <p>La abstracción en ciencias de la computación consiste en identificar las características esenciales de un objeto o problema y 
-           omitir los detalles irrelevantes para su análisis o resolución. Este principio permite simplificar sistemas complejos al
-           centrarse en los aspectos más relevantes para el diseño de soluciones, facilitando la comprensión, la organización de datos y
-           la programación estructurada.</p>
+        <p>Es un modelo que establece los valores y operaciones que se pueden llevar a cabo entre ellos a este proceso se le llama abstracto ya que
+           su objetivo de quien lo utiliza le permite establecer detalladamente de cómo está representada las operaciones dentro del proceso.</p>
+        <p>Dentro de la práctica al utilizar la abstracción nos va a permitir separar parte por parte el código para entender y analizar el cómo
+           se va a implementar al utilizar un TDA Dentro del código nos ayudará a que se pueda implementar un vector de tuplas que este a su vez
+           implementará y utilizará 2 vectores paralelos con el fin de que uno sea para las claves y el otro para los valores.</p>   
 
         <ol>
-            <li><strong>Tipo de Dato Abstracto (TDA):</strong>
-                <p>Un tipo de dato abstracto (TDA) es un modelo matemático y lógico que define un conjunto de datos y las operaciones
-                   permitidas sobre ellos, sin especificar cómo se implementan internamente. Los TDA, como pilas, colas, listas o árboles,
-                   proporcionan una interfaz clara para el usuario, mientras que los detalles de implementación permanecen ocultos.
-                   Esto asegura independencia entre el uso y la programación interna, lo que promueve modularidad y reutilización en
-                   el desarrollo de software.</p>
+            <li><strong>Abstracción en el desarrollo de software:</strong>
+                <p>El desarrollo simplifica la complejidad con la estructura especifica en los detalles necesarios en donde operan los múltiples
+                   niveles en donde dicha simplicidad mejora la reutilización de abstracciones mejorando la capacidad de mantenimiento y promoviendo
+                   la colaboración.</p>
             </li>
-           
+           <li><strong>Datos de entrada:</strong>
+                <p>Son todos los datos o procesos de información que permiten tener una secuencia de instrucciones en donde se suministre a un
+                   sistema informático para que se puedan procesar, es por ello que los datos ofrecen diversas fuentes, como por ejemplo en introducir
+                   datos por medio del teclado o el ratón pueden incluir texto, imágenes o audio.</p>
+            </li>
+            <li><strong>Procesamiento:</strong>
+                <p>Es la forma de ejecutar una serie de pasos identificando paso a paso las instrucciones en la cual son importante los datos de
+                   entrada establecidos por los algoritmos en los que ayuda a ofrecer soluciones a los problemas identificados.</p>
+            </li>           
+            <li><strong>Datos de salida:</strong>
+                <p>Son todos los datos que emanan de un proceso como la salida de la información obtenida de la serie de instrucciones de un algoritmo
+                   en la solución de problemas.</p>
+            </li>
         </ol>
 
-        <div class="highlight">
-            <p>En resumen, La abstracción simplifica problemas al resaltar lo esencial y ocultar lo irrelevante (Joyanes Aguilar, 2008).
-               Los tipos de datos abstractos (TDA) definen estructuras y operaciones sin detallar su implementación, promoviendo modularidad y
-               reutilización. Ambos son claves para diseñar sistemas eficientes y escalables.</p>
-        </div>
-
-        <h4>Abstracción en el desarrollo de software</h4>
-
-        <p>En el desarrollo de software, la abstracción implica dividir un problema en componentes fundamentales y considerar
-           tres elementos clave para su resolución:</p>
-
-        <h4>Datos de entrada</h4>
-
-        <p>Corresponden a la información necesaria para resolver el problema. Estos datos pueden ser homogéneos (del mismo tipo) o heterogéneos
-           (de distintos tipos) y representan los valores iniciales requeridos para el procesamiento.</p>
-
-        <h4>Procesamiento</h4>
-
-        <p>Es el conjunto de operaciones aplicadas sobre los datos de entrada mediante algoritmos, los cuales siguen reglas
-           específicas del paradigma de programación empleado. Dichos algoritmos transforman la información para producir soluciones
-           parciales o completas al problema.</p>
-
-        <h4>Datos de salida</h4>
-
-        <p>Son los resultados obtenidos tras el procesamiento, que pueden integrarse para ofrecer una solución final al problema planteado (González y Zapata, 2016).</p>
-
-        <p>La abstracción permite además modelar los datos en diversas estructuras, que abarcan desde variables simples, arreglos y cadenas, hasta estructuras más
-          complejas como los structs, lo que facilita la organización y el procesamiento eficiente de la información.</p>
-        
         <figure>
-            <span>Código 2. Ejemplo para determinar si un número es par o impar aplicando el principio de abstracción.</span>
+            <span>Código 2. Para números pares e impares estableciendo el principio de abstracción.</span>
         </figure>
 
        <div class="centrar-imagen">
@@ -589,31 +571,7 @@
         <br />
 
 
-        <p>El programa ejemplifica el principio de abstracción al dividir el problema en entrada, procesamiento y salida. En la entrada,
-           el usuario proporciona un número entero; en el procesamiento, se aplica el operador módulo (%) para verificar si es divisible entre
-           dos; y en la salida, el sistema muestra si el número es par o impar.</p>
-         <p>Este enfoque evidencia cómo la abstracción facilita la organización del algoritmo y la comprensión del código. Al separar cada etapa,
-            se mejora la claridad, la mantenibilidad y la posibilidad de reutilización, aspectos considerados esenciales en el diseño y enseñanza
-            de programas informáticos.</p>  
-
-
-
- <div class="highlight">
-            <h4>Resumen del principio de abstracción en programación. </h4>
-            <ul>
-                <li>La abstracción en programación se entiende como el proceso de simplificar un problema al dividirlo en tres componentes esenciales: entrada,
-                    procesamiento y salida. Este enfoque permite organizar de manera clara la lógica de los algoritmos y facilita su comprensión tanto en la
-                    enseñanza como en la práctica del desarrollo de software.</li>
-                <li>El ejemplo en código C presentado muestra cómo se aplican estos tres elementos: el usuario proporciona un número entero como entrada,
-                    el algoritmo aplica una operación aritmética como procesamiento y finalmente se genera un resultado que indica si el número es par o impar
-                    como salida.</li>
-                                
-            </ul>
-            <p>Este método no solo ayuda a comprender la estructura de un programa, sino que también fomenta la modularidad y la reutilización de código,
-               aspectos clave en la construcción de sistemas eficientes y escalables.
-            </p>
-        </div>   
-               
+    
 
 <h4>1.1.4 Orden de complejidad 𝑂() de un algoritmo</h4>
         
